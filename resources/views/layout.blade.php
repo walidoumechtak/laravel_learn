@@ -18,8 +18,9 @@
     <body class="antialiased">
         <div class="relative">
             <nav>
-                <a href="/"> Home </a>
-                <a href="/about"> about </a>
+                <a href="{{ Route("home") }}"> Home </a>
+                <a href="{{ Route("about") }}"> about </a>
+                <a href="{{ Route("computers.index") }}"> computers </a>
             </nav>
         </div>
         

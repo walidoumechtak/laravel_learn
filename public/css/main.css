@@ -30,3 +30,20 @@ nav a{
     height: 80vh;
     font-family: sans-serif;
 }
+
+ul li
+{
+    list-style-type: none;
+    margin: 10px 0;
+    text-align: center;
+    background-color: orange;
+    padding: 13px 65px;
+}
+
+ul a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComputersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaticControllers;
 /*
@@ -13,8 +14,12 @@ use App\Http\Controllers\StaticControllers;
 |
 */
 
-Route::get("/", [StaticControllers::class, "index"]);
-Route::get("about", [StaticControllers::class, "about"]);
+Route::get("/", [StaticControllers::class, "index"])->name("home");  // if i change the route path or url the <a> tage is no affected so there's no probleme
+
+Route::get("about", [StaticControllers::class, "about"])->name("about");
+
+Route::resource("computers", ComputersController::class); // domaine.com/computers/edit ... create ... update ...
+
 
 // Route::get('/first/{name_value?}/{age_value?}', function($name_value = null, $age_value = null){
 

@@ -18,8 +18,9 @@
     <body class="antialiased">
         <div class="relative">
             <nav>
-                <a href="/"> Home </a>
-                <a href="/about"> about </a>
+                <a href="<?php echo e(Route("home")); ?>"> Home </a>
+                <a href="<?php echo e(Route("about")); ?>"> about </a>
+                <a href="<?php echo e(Route("computers.index")); ?>"> computers </a>
             </nav>
         </div>
         
